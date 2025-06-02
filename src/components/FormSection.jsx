@@ -15,7 +15,7 @@ export const FormSection = () => {
   return (
     <form id="form" className="flex flex-col gap-8 min-w-7/8">
       <Input
-        label="Nome*"
+        label="Nome"
         placeholder="Nome Completo"
         id="nome"
         type="text"
@@ -24,7 +24,7 @@ export const FormSection = () => {
       />
 
       <Input
-        label="E-mail*"
+        label="E-mail"
         placeholder="Digite seu e-mail"
         id="email"
         type="text"
@@ -33,7 +33,7 @@ export const FormSection = () => {
       />
 
       <Input
-        label="Telefone*"
+        label="Telefone"
         placeholder="Ex: (99) 99999-9999"
         id="telefone"
         type="number"
@@ -46,7 +46,7 @@ export const FormSection = () => {
       />
 
       <Input
-        label="Linkedln"
+        label="Linkedln (Opcional)"
         placeholder="Ex: https://www.linkedin.com/in/seu-usuario"
         id="linkedln"
         type="text"
@@ -55,7 +55,7 @@ export const FormSection = () => {
       />
 
       <Input
-        label="Github"
+        label="Github (Opcional)"
         placeholder="Ex: https://github.com/seu-usuario"
         id="github"
         type="text"
