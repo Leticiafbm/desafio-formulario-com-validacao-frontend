@@ -37,7 +37,19 @@ export const FormSection = () => {
     try{
       await schemaDeValidacao.validate(form, {abortEarly:false});
       setErros({});
+      const cadastros = JSON.parse(localStorage.getItem("cadastros")) || [];
+      console.log(cadastros)
+      cadastros.push(form);
+      localStorage.setItem("cadastros", JSON.stringify(cadastros));
       alert("Cadastro realizado com sucesso!")
+      setForm({
+        nomeCompleto:"",
+        email:"",
+        telefone:"",
+        cargo:"",
+        linkedln:"",
+        github:"",
+      })
     } catch (erro) {
       if (erro.inner) {
         const formErros = {};
