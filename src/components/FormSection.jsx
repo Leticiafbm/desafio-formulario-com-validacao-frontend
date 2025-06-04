@@ -107,7 +107,7 @@ export const FormSection = () => {
         <CargosDropdown
         listaCargos={listaCargos}
         value={form.cargo}
-        onChange={handleChange}
+        onChange={handleCargoChange}
       />
       {erros.cargo && <div className="text-red-400 text-xs absolute font-bold">{erros.cargo}</div>}
       </div>
